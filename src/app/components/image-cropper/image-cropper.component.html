@@ -1,0 +1,15 @@
+<!-- <div *ngIf="imagefile[0].fileUrls == undefined"> -->
+    <image-cropper
+    *ngIf="imagefile[0].fileUrls"
+    [imageURL] = "imagefile[0].fileUrls.changingThisBreaksApplicationSecurity"
+    [maintainAspectRatio]="true"
+    [aspectRatio]="4 / 3"
+    format="png"
+    (imageCropped)="imageCropped($event)"
+    (imageLoaded)="imageLoaded()"
+    (cropperReady)="cropperReady()"
+    (loadImageFailed)="loadImageFailed()"
+></image-cropper>
+<!-- </div> -->
+
+<!-- <img [src]="croppedImage" /> -->

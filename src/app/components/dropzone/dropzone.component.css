@@ -1,0 +1,21 @@
+.dropzone-container {
+    height: 25rem;
+    background-color: #b6dfdf;
+    width: 60%;
+    border: 3px dashed #5600c9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .dropzoneContainer {
+    
+} */
+
+:host ::ng-deep .dropZoneContainer {
+    font-size: 3rem;
+}
+
+:host ::ng-deep {
+    padding-top: 10rem;
+}
